@@ -135,6 +135,8 @@ if (!function_exists('http_build_url')) {
 
 		if (!empty($url['scheme'])) {
 			$parsed_string .= $url['scheme'] . '://';
+		} else {
+			$parsed_string .= '//';
 		}
 
 		if (!empty($url['user'])) {
